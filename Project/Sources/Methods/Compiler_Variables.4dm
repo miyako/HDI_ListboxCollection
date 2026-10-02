@@ -1,3 +1,5 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284(vDescription1)
-C_TEXT:C284(vDescription2)
+var vDescription1; vDescription2 : Text
+var colName; myCollection; selectedItems : Collection
+var selectedItem : Object
+var selectedPosition : Integer

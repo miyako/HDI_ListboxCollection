@@ -88,7 +88,26 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
+				},
+				"refMetaBoolean": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-meta-boolean",
+					"stroke": "transparent"
+				},
+				"refMetaText": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-meta-text",
+					"stroke": "transparent"
 				}
 			}
 		},
@@ -222,6 +241,7 @@
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"listboxType": "collection",
+					"resizingMode": "legacy",
 					"hideFocusRing": true,
 					"movableRows": false,
 					"headerHeight": "2em",
@@ -247,9 +267,6 @@
 							"dateFormat": "systemMedium",
 							"pictureFormat": "scaled",
 							"truncateMode": "none",
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -258,7 +275,7 @@
 							],
 							"header": {
 								"name": "Header1",
-								"text": "Column 1",
+								"text": ":xliff:HDI2_Column1",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -270,7 +287,8 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
 							}
 						},
 						{
@@ -281,9 +299,6 @@
 							"minWidth": 100,
 							"maxWidth": 300,
 							"dateFormat": "systemMedium",
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -292,7 +307,7 @@
 							],
 							"header": {
 								"name": "Header2",
-								"text": "Column 2",
+								"text": ":xliff:HDI2_Column2",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -302,10 +317,15 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"List Box1": {
 					"type": "listbox",
@@ -333,9 +353,6 @@
 							"width": 140,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -344,7 +361,7 @@
 							],
 							"header": {
 								"name": "Header3",
-								"text": "Column 1",
+								"text": ":xliff:HDI2_Column1",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -354,8 +371,10 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						},
 						{
 							"name": "Column4",
@@ -363,9 +382,6 @@
 							"width": 140,
 							"minWidth": 10,
 							"maxWidth": 32000,
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -374,7 +390,7 @@
 							],
 							"header": {
 								"name": "Header4",
-								"text": "Column 2",
+								"text": ":xliff:HDI2_Column2",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -384,10 +400,15 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"Variable": {
 					"type": "input",
@@ -401,7 +422,9 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic"
 				},
 				"Variable1": {
 					"type": "input",
@@ -415,7 +438,9 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic"
 				},
 				"Variable3": {
 					"type": "input",
@@ -429,7 +454,9 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic"
 				},
 				"Text": {
 					"type": "text",
@@ -439,7 +466,8 @@
 					"height": 17,
 					"sizingX": "move",
 					"textAlign": "right",
-					"text": "selectedItem.attribute1:"
+					"text": "selectedItem.attribute1:",
+					"stroke": "automatic"
 				},
 				"Text1": {
 					"type": "text",
@@ -449,7 +477,8 @@
 					"height": 17,
 					"sizingX": "move",
 					"textAlign": "right",
-					"text": "selectedItem.attribute2:"
+					"text": "selectedItem.attribute2:",
+					"stroke": "automatic"
 				},
 				"Text3": {
 					"type": "text",
@@ -459,7 +488,8 @@
 					"height": 17,
 					"sizingX": "move",
 					"textAlign": "right",
-					"text": "selectedPosition:"
+					"text": "selectedPosition:",
+					"stroke": "automatic"
 				},
 				"Text2": {
 					"type": "text",
@@ -472,7 +502,8 @@
 					"fontSize": 14,
 					"fontWeight": "bold",
 					"textDecoration": "underline",
-					"text": "Subset"
+					"text": ":xliff:HDI2_Subset",
+					"stroke": "automatic"
 				},
 				"Text4": {
 					"type": "text",
@@ -485,7 +516,8 @@
 					"fontSize": 14,
 					"fontWeight": "bold",
 					"textDecoration": "underline",
-					"text": "Current item and position"
+					"text": ":xliff:HDI2_CurrentItemAndPosition",
+					"stroke": "automatic"
 				}
 			}
 		},
@@ -524,13 +556,13 @@
 					"top": 218,
 					"left": 640,
 					"width": 120,
-					"height": 22,
 					"action": "nextPage",
-					"text": "Show example",
+					"text": ":xliff:HDI2_ShowExample",
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				}
 			}
 		},
@@ -545,6 +577,7 @@
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"listboxType": "collection",
+					"resizingMode": "legacy",
 					"hideFocusRing": true,
 					"movableRows": false,
 					"headerHeight": "2em",
@@ -571,9 +604,6 @@
 							"dateFormat": "systemMedium",
 							"pictureFormat": "scaled",
 							"truncateMode": "none",
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -582,7 +612,7 @@
 							],
 							"header": {
 								"name": "Header5",
-								"text": "Column 1",
+								"text": ":xliff:HDI2_Column1",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -594,7 +624,8 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
 							}
 						},
 						{
@@ -605,9 +636,6 @@
 							"minWidth": 100,
 							"maxWidth": 300,
 							"dateFormat": "systemMedium",
-							"stroke": "automatic",
-							"fill": "automatic",
-							"alternateFill": "automatic",
 							"textAlign": "automatic",
 							"verticalAlign": "automatic",
 							"events": [
@@ -616,7 +644,7 @@
 							],
 							"header": {
 								"name": "Header6",
-								"text": "Column 2",
+								"text": ":xliff:HDI2_Column2",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
@@ -626,10 +654,15 @@
 								"stroke": "automatic",
 								"fill": "automatic",
 								"textAlign": "automatic",
-								"verticalAlign": "automatic"
-							}
+								"verticalAlign": "automatic",
+								"truncateMode": "none"
+							},
+							"truncateMode": "none"
 						}
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic",
+					"alternateFill": "automaticAlternate"
 				},
 				"information1": {
 					"type": "input",
@@ -650,7 +683,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				}
 			}
 		}

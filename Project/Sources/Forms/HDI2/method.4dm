@@ -1,6 +1,17 @@
+var $i : Integer
+var $tmpDate : Text
+var $bVisible : Boolean
+var $fg; $bg : Integer
+
 Case of 
 		
 	: (Form event code:C388=On Load:K2:1)
+		
+		// resolve theme-aware row colours from the hidden reference rectangles (see styleSheets.css)
+		OBJECT GET RGB COLORS(*; "refMetaBoolean"; $fg; $bg)
+		Form:C1466.metaBooleanFill:=RGBToHex($bg)
+		OBJECT GET RGB COLORS(*; "refMetaText"; $fg; $bg)
+		Form:C1466.metaTextFill:=RGBToHex($bg)
 		
 		ARRAY TEXT:C222(_TabTitles; 0)
 		ARRAY TEXT:C222(_Descriptions; 0)
@@ -20,7 +31,6 @@ Case of
 		
 		UNLOAD RECORD:C212([INFO:1])
 		
-		C_COLLECTION:C1488(colName)
 		colName:=New collection:C1472()
 		colName.push("John")
 		colName.push("Quinn")
@@ -41,7 +51,6 @@ Case of
 		colName.push("Lindsay")
 		colName.push("Gretal")
 		
-		C_COLLECTION:C1488(myCollection)
 		myCollection:=New collection:C1472
 		For ($i; 1; 50; 4)
 			myCollection.push(New object:C1471("attribute1"; $i; "attribute2"; Random:C100))
@@ -60,14 +69,12 @@ Case of
 		
 		Case of 
 			: (FORM Get current page:C276=2)
-				C_BOOLEAN:C305($bVisible)
 				$bVisible:=OBJECT Get visible:C1075(*; "@Listbox")
 				
 				OBJECT SET VISIBLE:C603(*; "@Listbox"; Not:C34($bVisible))
 				OBJECT SET VISIBLE:C603(*; "@Column"; $bVisible)
 				
 			: (FORM Get current page:C276=3)
-				C_BOOLEAN:C305($bVisible)
 				$bVisible:=OBJECT Get visible:C1075(*; "@Multi")
 				
 				OBJECT SET VISIBLE:C603(*; "@Multi"; Not:C34($bVisible))

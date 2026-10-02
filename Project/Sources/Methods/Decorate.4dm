@@ -1,17 +1,14 @@
-//%attributes = {}
-
-C_OBJECT:C1216($oTmp)
-$oTmp:=$1
+//%attributes = {"invisible":true}
+#DECLARE($item : Object)->$meta : Object
 
 Case of 
-	: (OB Get type:C1230($oTmp; "attribute2")=Is boolean:K8:9)
-		$0:=New object:C1471("fill"; "#e6ffff")
+	: (OB Get type:C1230($item; "attribute2")=Is boolean:K8:9)
+		$meta:=New object:C1471("fill"; Form.metaBooleanFill)
 		
-	: (OB Get type:C1230($oTmp; "attribute2")=Is text:K8:3)
-		$0:=New object:C1471("cell"; New object:C1471("colAttribute2"; New object:C1471("fill"; "#ffffcc")))
+	: (OB Get type:C1230($item; "attribute2")=Is text:K8:3)
+		$meta:=New object:C1471("cell"; New object:C1471("colAttribute2"; New object:C1471("fill"; Form.metaTextFill)))
 		
 	Else 
-		$0:=New object:C1471()
+		$meta:=New object:C1471()
 		
 End case 
-

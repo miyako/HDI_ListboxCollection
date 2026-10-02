@@ -1,2 +1,2 @@
 //%attributes = {"invisible":true}
-C_LONGINT:C283(00_Start; $1)
+  // 00_Start and Decorate declare their signatures with #DECLARE

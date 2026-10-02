@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="HDI2" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="HDI2_Column1" resname="HDI2_Column1">
+				<source>Column 1</source>
+				<target>Column 1</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Column2" resname="HDI2_Column2">
+				<source>Column 2</source>
+				<target>Column 2</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Subset" resname="HDI2_Subset">
+				<source>Subset</source>
+				<target>Subset</target>
+			</trans-unit>
+			<trans-unit id="HDI2_CurrentItemAndPosition" resname="HDI2_CurrentItemAndPosition">
+				<source>Current item and position</source>
+				<target>Current item and position</target>
+			</trans-unit>
+			<trans-unit id="HDI2_ShowExample" resname="HDI2_ShowExample">
+				<source>Show example</source>
+				<target>Show example</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,10 @@
+{
+	"First Record": ":xliff:TipFirstRecord",
+	"Previous Record": ":xliff:TipPreviousRecord",
+	"Next Record": ":xliff:TipNextRecord",
+	"Last Record": ":xliff:TipLastRecord",
+	"Delete Record": ":xliff:TipDeleteRecord",
+	"Cancel": ":xliff:CommonCancel",
+	"OK": ":xliff:TipAccept",
+	"Record Number": ":xliff:TipRecordNumber"
+}
